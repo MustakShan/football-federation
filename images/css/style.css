@@ -21,7 +21,7 @@ main{
 }
 section{
     width: 100%;
-    height: 490px;
+    height: auto;
 }
 /* header area */
 .header-area{
@@ -145,4 +145,31 @@ section h1{
 .social-icons h2{
     font-size: 35px;
     font-weight: 700;
+}
+
+/* -------------Media Query 
+----------------------------------*/
+/* Modile device */
+@media only screen and (max-width:480px){
+    head{
+        width: 100%;
+    }
+    .header-area{
+        display: flex;
+        flex-direction: column;
+    }
+    .head-image img{
+        width: 100%;
+    }
+    .main-container{
+        width: 100%;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .extra-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
